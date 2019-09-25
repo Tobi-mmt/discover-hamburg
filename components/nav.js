@@ -5,7 +5,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import Link from '../src/Link';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -19,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const ButtonAppBar = ({ title, backLink }) => {
+const Nav = ({ title, backLink }) => {
   const classes = useStyles();
 
   return (
@@ -38,4 +37,4 @@ const ButtonAppBar = ({ title, backLink }) => {
   );
 }
 
-export default ButtonAppBar
+export default Nav
