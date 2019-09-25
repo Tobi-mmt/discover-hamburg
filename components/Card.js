@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import SunIcon from '@material-ui/icons/WbSunny';
 import CloudyIcon from '@material-ui/icons/WbCloudy';
-import Link from '../src/Link';
+import Link from '../lib/Link';
 
 const useStyles = makeStyles(theme => ({
   card: {
