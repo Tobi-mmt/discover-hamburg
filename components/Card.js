@@ -9,11 +9,14 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import SunIcon from '@material-ui/icons/WbSunny';
 import CloudyIcon from '@material-ui/icons/WbCloudy';
+import DoneIcon from '@material-ui/icons/Done';
+import DoneAllIcon from '@material-ui/icons/DoneAll';
 import Link from '../lib/Link';
 
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    width: "100%",
     display: "inline-block",
     margin: "1em"
   },
@@ -40,10 +43,17 @@ const useStyles = makeStyles(theme => ({
   text: {
     fontSize: "1rem",
     fontWeight: "bold"
+  },
+  rightButton: {
+    marginLeft: "auto"
+  },
+  hidden: {
+    display: "none",
+    height: 0
   }
 }));
 
-const Tag = ({ color, children }) => {
+const Tag = ({ children }) => {
   const classes = useStyles();
   return (
     <div className={classes.tag}>
@@ -54,12 +64,12 @@ const Tag = ({ color, children }) => {
   )
 }
 
-export default function MediaCard({ place: { name, description, image, locationLink, websiteLink, cost, weather, duration } }) {
+export default function MediaCard({ place: { id, name, description, image, locationLink, websiteLink, cost, weather, duration }, seen, toggleSeen }) {
   const classes = useStyles();
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <CardActionArea className={seen ? classes.hidden : ""}>
         <div className={classes.tags}>
           <Tag>{weather === "sunny" && <SunIcon />}{weather === "cloudy" && <CloudyIcon />}</Tag>
           <Tag>{duration}</Tag>
@@ -80,16 +90,20 @@ export default function MediaCard({ place: { name, description, image, locationL
         </CardContent>
       </CardActionArea>
       <CardActions>
-        {locationLink && <a href={locationLink} target="_blank">
+        <Typography className={seen ? "" : classes.hidden}>{name}</Typography>
+        {locationLink && <a href={locationLink} target="_blank" className={seen ? classes.hidden : ""}>
           <Button size="small" color="primary">
             Maps
         </Button>
         </a>}
-        {websiteLink && <a href={websiteLink} target="_blank">
+        {websiteLink && <a href={websiteLink} target="_blank" className={seen ? classes.hidden : ""}>
           <Button size="small" color="primary">
             Webseite
         </Button>
         </a>}
+        <Button onClick={() => toggleSeen(id)} className={classes.rightButton} size="small" color="primary">
+          {seen ? <DoneAllIcon /> : <DoneIcon />}
+        </Button>
       </CardActions>
     </Card>
   );
