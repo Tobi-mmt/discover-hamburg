@@ -11,14 +11,13 @@ import SunIcon from '@material-ui/icons/WbSunny';
 import CloudyIcon from '@material-ui/icons/WbCloudy';
 import DoneIcon from '@material-ui/icons/Done';
 import DoneAllIcon from '@material-ui/icons/DoneAll';
-import Link from '../lib/Link';
 
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
-    width: "100%",
+    width: "94%",
     display: "inline-block",
-    margin: "1em"
+    margin: "3%"
   },
   media: {
     height: 300,
