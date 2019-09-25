@@ -9,7 +9,7 @@ export default function Index() {
     <>
       <Nav title="Hamburg erkunden" />
       <Container>
-        <Box >
+        <Box textAlign="center">
           {
             DATA.map((place) => <Card key={place.id} place={place}/>
             )

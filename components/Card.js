@@ -80,16 +80,16 @@ export default function MediaCard({ place: { name, description, image, locationL
         </CardContent>
       </CardActionArea>
       <CardActions>
-        {locationLink && <Link href={locationLink} target="_blank">
+        {locationLink && <a href={locationLink} target="_blank">
           <Button size="small" color="primary">
             Maps
         </Button>
-        </Link>}
-        {websiteLink && <Link href={websiteLink} target="_blank">
+        </a>}
+        {websiteLink && <a href={websiteLink} target="_blank">
           <Button size="small" color="primary">
             Webseite
         </Button>
-        </Link>}
+        </a>}
       </CardActions>
     </Card>
   );
