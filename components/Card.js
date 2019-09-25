@@ -54,15 +54,16 @@ const Tag = ({ color, children }) => {
   )
 }
 
-export default function MediaCard({ place: { name, description, image, locationLink, websiteLink, cost, weather } }) {
+export default function MediaCard({ place: { name, description, image, locationLink, websiteLink, cost, weather, duration } }) {
   const classes = useStyles();
 
   return (
     <Card className={classes.card}>
       <CardActionArea>
         <div className={classes.tags}>
-          <Tag>{cost} €</Tag>
           <Tag>{weather === "sunny" && <SunIcon />}{weather === "cloudy" && <CloudyIcon />}</Tag>
+          <Tag>{duration}</Tag>
+          <Tag>{cost} €</Tag>
         </div>
         <CardMedia
           className={classes.media}
@@ -79,16 +80,16 @@ export default function MediaCard({ place: { name, description, image, locationL
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Link href={locationLink} target="_blank">
+        {locationLink && <Link href={locationLink} target="_blank">
           <Button size="small" color="primary">
             Maps
         </Button>
-        </Link>
-        <Link href={websiteLink} target="_blank">
+        </Link>}
+        {websiteLink && <Link href={websiteLink} target="_blank">
           <Button size="small" color="primary">
             Webseite
         </Button>
-        </Link>
+        </Link>}
       </CardActions>
     </Card>
   );
