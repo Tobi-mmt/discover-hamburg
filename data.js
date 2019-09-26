@@ -32,13 +32,46 @@ const DATA = [{
   weather: "sunny"
 },
 {
-  id: 4,
-  name: "Bonscheladen",
-  image: "https://www.hamburg-magazin.de/public/_processed_/csm_bonscheladen_cbf7586fc7.jpg",
-  description: "Hier werden Bonbons gemacht! Und zwar von Hand und mit sehr coolen Motiven im Bonbon! Das ist auch ein gutes Mitbringsel für die Süßen Zuhause!",
-  locationLink: "https://goo.gl/maps/4R5DfLTdjGEbkLHS9",
-  websiteLink: "http://www.bonscheladen.de/",
-  duration: "15 m",
+  id: 12,
+  name: "Portugisenviertel",
+  image: "https://media.cool-cities.com/portugiesenviertel009pr_f_mob.jpg?h=530",
+  description: "Das gesamte Viertel besteht gefühlt nur aus Essen. Von Luigi's Pizza bis O Pescador's Fischrestaurant findet ihr hier alles.",
+  locationLink: "https://goo.gl/maps/9mAjVzZAmrZm5o3UA",
+  websiteLink: "",
+  duration: "1 h",
+  cost: 15,
+  weather: "cloudy"
+},
+{
+  id: 13,
+  name: "Hanseatische Materialverwaltung",
+  image: "https://anne-art.com/wp-content/uploads/2019/04/AW20190331_Hamburg-5129.jpg",
+  description: "Möbel, Kleidung, Kostüme, Lampen und vieles mehr gibt es hier. Manchmal gibt es auch Events dort, einfach auf der Webseite nachschauen.",
+  locationLink: "https://goo.gl/maps/KL2muSSvCG6PPRor7",
+  websiteLink: "http://hanseatische-materialverwaltung.de/material/",
+  duration: "2 h",
+  cost: 0,
+  weather: "cloudy"
+},
+{
+  id: 10,
+  name: "Altonaer Balkon",
+  image: "https://www.hamburg-travel.com/fileadmin/_processed_/6/7/xcsm_30683-altonaer-balkon_c-vera-mueller_03_b7e7a16c6e.jpg.pagespeed.ic.0c2prBX0ox.jpg",
+  description: "Mit einem mitgebrachten Getränk euere Wahl auf die Bank setzen und den Schiffen beim vorbei fahren zusehen. Der Park erstreckt sich entlang der Elbe bis zu den Landungsbrücken.",
+  locationLink: "https://goo.gl/maps/cnVNF9dJ5duoYCXZ9",
+  websiteLink: "",
+  duration: "2 h",
+  cost: 0,
+  weather: "sunny"
+},
+{
+  id: 14,
+  name: "farbenmeer besuchen",
+  image: "https://farbenmeer.de/static/pic/kitchenGroup.jpg",
+  description: "Weil unser Büro sehenswert ist, könnt ihr einfach vorbei kommen, am Besten zum gemeinsamen Kochen am Mittag!",
+  locationLink: "https://goo.gl/maps/tRPraHHwDYKjxUwZ6",
+  websiteLink: "https://farbenmeer.de/de",
+  duration: "1 h",
   cost: 0,
   weather: "cloudy"
 },
@@ -51,6 +84,17 @@ const DATA = [{
   websiteLink: "https://ottensenmachtplatz.de/",
   duration: "2 h",
   cost: 0,
+  weather: "cloudy"
+},
+{
+  id: 4,
+  name: "Bonscheladen",
+  image: "https://www.hamburg-magazin.de/public/_processed_/csm_bonscheladen_cbf7586fc7.jpg",
+  description: "Hier werden Bonbons gemacht! Und zwar von Hand und mit sehr coolen Motiven im Bonbon! Das ist auch ein gutes Mitbringsel für die Süßen Zuhause!",
+  locationLink: "https://goo.gl/maps/4R5DfLTdjGEbkLHS9",
+  websiteLink: "http://www.bonscheladen.de/",
+  duration: "15 m",
+  cost: 3,
   weather: "cloudy"
 },
 {
@@ -86,17 +130,50 @@ const DATA = [{
   cost: 19,
   weather: "cloudy"
 },
-// {
-//   id: 8,
-//   name: "",
-//   image: "",
-//   description: "",
-//   locationLink: "",
-//   websiteLink: "",
-//   duration: "",
-//   cost: 0,
-//   weather: "cloudy"
-// },
+{
+  id: 11,
+  name: "Stadtpark",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Hamburg_Planetarium.jpg/1200px-Hamburg_Planetarium.jpg",
+  description: "Im Stadtpark kann man sich eine Auszeit gönnen. Hier findet ihr das Planetarium, ein See zum Schwimmen und auch das ein oder andere Konzert.",
+  locationLink: "https://g.page/planetariumHH?share",
+  websiteLink: "http://www.hamburgerstadtpark.de/",
+  duration: "2 h",
+  cost: 0,
+  weather: "sunny"
+},
+{
+  id: 9,
+  name: "Ausflug nach Bergedorf",
+  image: "https://www.bildarchiv-hamburg.de/hamburg/gebaeude/bezirk_bergedorf/11_21461_bergedorfer_schloss/11_21461_bergedorfer_schloss.jpg",
+  description: "Das Bergedorfer Schloss, die Vier- und Marschlande und eine wunderschöne Altstadt könnt ihr hier besichtigen. Einfach mit der S21 nach Hamburg-Bergedorf",
+  locationLink: "https://goo.gl/maps/9r8Aaz1CnjWgboHs9",
+  websiteLink: "https://www.bergedorf.de/tourismus/10-highlights/",
+  duration: "6 h",
+  cost: 0,
+  weather: "sunny"
+},
+{
+  id: 14,
+  name: "Tayas KaffeeHaus",
+  image: "https://cdn.shopify.com/s/files/1/0064/5814/6906/files/TAYAS_Blick_ins_Cafe_1800x.jpg?v=1564413948",
+  description: "Ein sehr süßes und gemütliches Cafe in Uhlenhorst",
+  locationLink: "https://goo.gl/maps/LDubBpvCc3oVY5vD6",
+  websiteLink: "https://tayas-hamburg.de/",
+  duration: "2 h",
+  cost: 15,
+  weather: "cloudy"
+},
+{
+  id: 15,
+  name: "",
+  image: "",
+  description: "",
+  locationLink: "",
+  websiteLink: "",
+  duration: "",
+  cost: 0,
+  weather: "cloudy"
+},
 ]
 
 export default DATA
