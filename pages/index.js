@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Container, Box } from '@material-ui/core';
+import React, { Component } from 'react'
+import { Container, Box } from '@material-ui/core'
 import DATA from '../data'
 import Nav from "../components/Nav"
 import Card from "../components/Card"
@@ -50,6 +50,6 @@ export default class Index extends Component {
           </Box>
         </Container>
       </>
-    );
+    )
   }
 }

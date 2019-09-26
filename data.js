@@ -24,7 +24,7 @@ const DATA = [{
   id: 3,
   name: "Elbtunnel nach Steinwerder",
   image: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Hamburg%2C_Landungsbr%C3%BCcken_--_2016_--_3110.jpg",
-  description: "Am Besten bei Sonnenuntergang! Durch den Elbtunnel durch seht ihr den Hafen und Schiffe von der anderen Seite und die Abendsonne in der Elphi spiegeln.",
+  description: "Am Besten bei Sonnenuntergang! Durch den Elbtunnel durch und ihr seht den Hafen mit seinen Schiffen von der anderen Seite und die Abendsonne in der Elphi spiegeln.",
   locationLink: "https://goo.gl/maps/JKztpCZb99pczG8X7",
   websiteLink: "",
   duration: "1 h",
@@ -35,7 +35,7 @@ const DATA = [{
   id: 4,
   name: "Bonscheladen",
   image: "https://www.hamburg-magazin.de/public/_processed_/csm_bonscheladen_cbf7586fc7.jpg",
-  description: "Hier werden Bonbons gemacht! Und zwar von Hand und mit sehr coolen Motiven IM Bonbon! Das ist auch ein gutes Mitbringsel für die Süßen Zuhause!",
+  description: "Hier werden Bonbons gemacht! Und zwar von Hand und mit sehr coolen Motiven im Bonbon! Das ist auch ein gutes Mitbringsel für die Süßen Zuhause!",
   locationLink: "https://goo.gl/maps/4R5DfLTdjGEbkLHS9",
   websiteLink: "http://www.bonscheladen.de/",
   duration: "15 m",
@@ -76,7 +76,7 @@ const DATA = [{
   weather: "sunny"
 },
 {
-  id: 7,
+  id: 8,
   name: "Holdhusenbad",
   image: "https://www.hamburg-magazin.de/public/_processed_/csm_holthusenbad_eppendorf_3dbfa3645c.jpg",
   description: "Zwar gibt es in Hamburg keine Quellen wie in Stuttgart, aber auch hier kann man sich in Thermen entspannen. Massagen und Saunen gibts natürlich auch.",
@@ -86,17 +86,17 @@ const DATA = [{
   cost: 19,
   weather: "cloudy"
 },
-{
-  id: 7,
-  name: "",
-  image: "",
-  description: "",
-  locationLink: "",
-  websiteLink: "",
-  duration: "",
-  cost: 0,
-  weather: "cloudy"
-},
+// {
+//   id: 8,
+//   name: "",
+//   image: "",
+//   description: "",
+//   locationLink: "",
+//   websiteLink: "",
+//   duration: "",
+//   cost: 0,
+//   weather: "cloudy"
+// },
 ]
 
 export default DATA

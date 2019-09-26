@@ -1,16 +1,16 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import SunIcon from '@material-ui/icons/WbSunny';
-import CloudyIcon from '@material-ui/icons/WbCloudy';
-import DoneIcon from '@material-ui/icons/Done';
-import DoneAllIcon from '@material-ui/icons/DoneAll';
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import Card from '@material-ui/core/Card'
+import CardActionArea from '@material-ui/core/CardActionArea'
+import CardActions from '@material-ui/core/CardActions'
+import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+import SunIcon from '@material-ui/icons/WbSunny'
+import CloudyIcon from '@material-ui/icons/WbCloudy'
+import DoneIcon from '@material-ui/icons/Done'
+import DoneAllIcon from '@material-ui/icons/DoneAll'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -50,10 +50,10 @@ const useStyles = makeStyles(theme => ({
     display: "none",
     height: 0
   }
-}));
+}))
 
 const Tag = ({ children }) => {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
     <div className={classes.tag}>
       <Typography variant="body2" component="p" >
@@ -64,7 +64,7 @@ const Tag = ({ children }) => {
 }
 
 export default function MediaCard({ place: { id, name, description, image, locationLink, websiteLink, cost, weather, duration }, seen, toggleSeen }) {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <Card className={classes.card}>
@@ -105,5 +105,5 @@ export default function MediaCard({ place: { id, name, description, image, locat
         </Button>
       </CardActions>
     </Card>
-  );
+  )
 }
