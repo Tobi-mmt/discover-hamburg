@@ -165,12 +165,12 @@ const DATA = [{
 },
 {
   id: 15,
-  name: "",
-  image: "",
-  description: "",
+  name: "Free walking tour",
+  image: "https://www.robinandthetourguides.de/de/images/tour_fras/slide1.jpg",
+  description: "Das sind wirklich coole Stadtführungen die Spaß machen und man lernt etwas dabei von der Stadt. Einfach kurz anmelden und dann am Ende zahlen was es euch wert war.",
   locationLink: "",
-  websiteLink: "",
-  duration: "",
+  websiteLink: "https://www.robinandthetourguides.de/de/",
+  duration: "2 h",
   cost: 0,
   weather: "cloudy"
 },
