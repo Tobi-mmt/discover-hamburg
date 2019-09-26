@@ -45,7 +45,7 @@ const DATA = [{
 {
   id: 5,
   name: "Ottensen erkunden",
-  image: "http://www.altona.info/wp-content/uploads/2010/04/Ottensen_700_Veranstaltungen.jpg",
+  image: "https://www.radiohamburg.de/var/ezflow_site/storage/images/media/images/in-fussgaengerzone-umgewandelter-strassenzug-bei-ottensen-macht-platz/58710617-1-ger-DE/In-Fussgaengerzone-umgewandelter-Strassenzug-bei-Ottensen-macht-Platz_image_1200.jpg",
   description: "Die Bahrenfelder Str. und die Ottensen Hauptstr. sind zur Zeit Autofrei. Hier haben sich Cafes und Läden breit gemacht, die erkundet werden können.",
   locationLink: "https://goo.gl/maps/Z6qjRKWT78pSXmkj7",
   websiteLink: "https://ottensenmachtplatz.de/",
