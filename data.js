@@ -33,7 +33,7 @@ const DATA = [{
 },
 {
   id: 12,
-  name: "Portugisenviertel",
+  name: "Portugiesenviertel",
   image: "https://media.cool-cities.com/portugiesenviertel009pr_f_mob.jpg?h=530",
   description: "Das gesamte Viertel besteht gefühlt nur aus Essen. Von Luigi's Pizza bis O Pescador's Fischrestaurant findet ihr hier alles.",
   locationLink: "https://goo.gl/maps/9mAjVzZAmrZm5o3UA",
