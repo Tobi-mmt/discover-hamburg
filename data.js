@@ -153,7 +153,7 @@ const DATA = [{
   weather: "sunny"
 },
 {
-  id: 14,
+  id: 15,
   name: "Tayas KaffeeHaus",
   image: "https://cdn.shopify.com/s/files/1/0064/5814/6906/files/TAYAS_Blick_ins_Cafe_1800x.jpg?v=1564413948",
   description: "Ein sehr süßes und gemütliches Cafe in Uhlenhorst",
@@ -164,16 +164,38 @@ const DATA = [{
   weather: "cloudy"
 },
 {
-  id: 15,
+  id: 16,
   name: "Free walking tour",
   image: "https://www.robinandthetourguides.de/de/images/tour_fras/slide1.jpg",
-  description: "Das sind wirklich coole Stadtführungen die Spaß machen und man lernt etwas dabei von der Stadt. Einfach kurz anmelden und dann am Ende zahlen was es euch wert war.",
+  description: "Das sind wirklich coole Stadtführungen, die Spaß machen und man lernt etwas dabei über die Stadt. Einfach kurz anmelden und dann am Ende zahlen was es euch wert war.",
   locationLink: "",
   websiteLink: "https://www.robinandthetourguides.de/de/",
   duration: "2 h",
   cost: 0,
   weather: "cloudy"
+}, 
+{
+  id: 17,
+  name: "Museum der Illusionen",
+  image: "https://www.ganz-hamburg.de/wp-content/uploads/2018/10/1-Museum-der-Illusionen-1-929x1024.jpg",
+  description: "Hereinspaziert in die faszinierende Welt der Illusionen! Sie werden eure Sinne täuschen und euch hinters Licht führen.",
+  locationLink: "https://g.page/mdi-hamburg?share",
+  websiteLink: "https://hamburg.museumderillusionen.de/",
+  duration: "3 h",
+  cost: 12,
+  weather: "cloudy"
 },
+{
+  id: 18,
+  name: "Kunsthalle Hamburg",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hamburger_Kunsthalle.jpg/2560px-Hamburger_Kunsthalle.jpg",
+  description: "Die Hamburger Kunsthalle beheimatet mehrere bedeutende Kunstsammlungen und spannt den Bogen vom Mittelalter bis zur modernen und zeitgenössischen Kunst.",
+  locationLink: "https://goo.gl/maps/wrRjY5oNqqHBHr2a8",
+  websiteLink: "https://www.hamburger-kunsthalle.de/",
+  duration: "2 h",
+  cost: 14,
+  weather: "cloudy"
+}
 ]
 
 export default DATA
